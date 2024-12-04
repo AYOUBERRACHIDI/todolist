@@ -1,0 +1,130 @@
+/* Conteneur principal */
+.affichage {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+  }
+  
+  /* Ajouter une tâche - formulaire */
+  .add-task {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-task input,
+  .add-task select,
+  .add-task button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .add-task input:focus,
+  .add-task select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .add-task button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Kanban Board */
+  .kanban-board {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Kanban Column */
+  .kanban-column {
+    flex: 1;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: auto;
+  }
+  
+  /* Couleurs des colonnes */
+  .kanban-column.Preparation {
+    background-color: #fffbe6; /* Jaune clair */
+  }
+  
+  .kanban-column.Day\ of\ the\ Event {
+    background-color: #ffe6e6; /* Rouge clair */
+  }
+  
+  .kanban-column.Event\ Closing {
+    background-color: #e6ffe6; /* Vert clair */
+  }
+  
+  /* Kanban Task */
+  .kanban-task {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kanban-task h4 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .kanban-task p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  /* Boutons dans les tâches */
+  .kanban-task button {
+    margin-right: 5px;
+    padding: 8px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kanban-task button.edit {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .kanban-task button.edit:hover {
+    background-color: #e0a800;
+  }
+  
+  .kanban-task button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .kanban-task button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  .kanban-task button.move {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .kanban-task button.move:hover {
+    background-color: #218838;
+  }
+  
